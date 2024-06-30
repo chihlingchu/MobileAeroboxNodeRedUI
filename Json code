@@ -1,0 +1,2125 @@
+[
+    {
+        "id": "e2d71696648e90d2",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "98c342ce.9b9c3",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e62dc945.c10898",
+        "type": "tab",
+        "label": "流程2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "554f962f85a30ac3",
+        "type": "tab",
+        "label": "流程3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "98f6d75e4bc6b3f3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "453b920dba771692",
+        "type": "ui_group",
+        "name": "RH",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bb57a8bceda9684e",
+        "type": "ui_group",
+        "name": "PM2.5",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f939914a701b7725",
+        "type": "ui_group",
+        "name": "GPS",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e690fe3622e5ab3",
+        "type": "mqtt-broker",
+        "name": "deer071010",
+        "broker": "192.168.50.26",
+        "port": "1883",
+        "clientid": "deer071010",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "28bbdb1d.552ae4",
+        "type": "mqtt-broker",
+        "name": "Pi4_Broker_IN",
+        "broker": "192.168.0.116",
+        "port": "1883",
+        "clientid": "Jeff_Pi3",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "Home/RoomJeff",
+        "birthQos": "0",
+        "birthPayload": "Hi User...",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ba94238c.a1951",
+        "type": "ui_tab",
+        "name": "Mobile Aerob0x",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4cb17eba.02294",
+        "type": "ui_group",
+        "name": "Lab1",
+        "tab": "ba94238c.a1951",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": true
+    },
+    {
+        "id": "e66b4e00.ca8c3",
+        "type": "ui_group",
+        "name": "Lab2",
+        "tab": "ba94238c.a1951",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": true
+    },
+    {
+        "id": "67d48833.0ca558",
+        "type": "mqtt-broker",
+        "name": "Pi3",
+        "broker": "192.168.50.26",
+        "port": "1883",
+        "clientid": "Pi",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "Home/RoomJeff",
+        "birthQos": "0",
+        "birthPayload": "Hi User...",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7ebb13ff.0569bc",
+        "type": "ui_tab",
+        "name": "Mobile Aerobox",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "83623d6c.f38ad",
+        "type": "ui_group",
+        "name": "BOX_01",
+        "tab": "7ebb13ff.0569bc",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "bede686f.0f15b8",
+        "type": "mqtt-broker",
+        "name": "test.mosquitto.org",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "JeffHu_00",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "89754be6.cb85d8",
+        "type": "mqtt-broker",
+        "name": "emqx_Broker",
+        "broker": "Broker.emqx.io",
+        "port": "1883",
+        "clientid": "Pi4_716",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "4b3e807678c7b57a",
+        "type": "mqtt-broker",
+        "name": "iphone_wifi",
+        "broker": "192.168.1.117",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4a0d285623aaa4b6",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "7nbi99fadvxhlh86g27aiyiunipq71esec88jj7840bpa6nsfrcli65w50srdno2",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "1c6852f7.95a1ed",
+        "type": "ui_group",
+        "z": "98c342ce.9b9c3",
+        "name": "Default",
+        "tab": "e4c4803b.93d4",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e4c4803b.93d4",
+        "type": "ui_tab",
+        "z": "98c342ce.9b9c3",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "fc78a0aebc4d97c3",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 36
+    },
+    {
+        "id": "223803ddc3eab5cf",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3b109e9cda416e82",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c7c1cfcafa4dde89",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "375198bb99521d14",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "44bf3abefca920e3",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "952f9f506fb421a5",
+        "type": "ui_spacer",
+        "z": "554f962f85a30ac3",
+        "name": "spacer",
+        "group": "fc78a0aebc4d97c3",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cbe51d05eecc1d1f",
+        "type": "file in",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 140,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d27de853f4cec53",
+        "type": "ui_gauge",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 160,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "152ef54adf5a1988",
+        "type": "ui_chart",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temp record",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 130,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "057968f5409316c9",
+        "type": "ui_gauge",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "bb57a8bceda9684e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current PM2.5",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 140,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "92c896a15854af35",
+        "type": "ui_chart",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "bb57a8bceda9684e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "PM2.5 record",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58c187f5187d3e03",
+        "type": "ui_chart",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "453b920dba771692",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "RH record",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a21e46b0c2081363",
+        "type": "ui_gauge",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "group": "453b920dba771692",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current RH",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 130,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "07a5b29604715b48",
+        "type": "mqtt in",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "topic": "/MA2019",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "2e690fe3622e5ab3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 400,
+        "wires": [
+            [
+                "2c61b5a3bff69a12"
+            ]
+        ]
+    },
+    {
+        "id": "2c61b5a3bff69a12",
+        "type": "debug",
+        "z": "e2d71696648e90d2",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "38481c52e3909a86",
+        "type": "ui_text",
+        "z": "e2d71696648e90d2",
+        "group": "f939914a701b7725",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "GPS",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 110,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "63fbc572.d404ec",
+        "type": "mqtt in",
+        "z": "98c342ce.9b9c3",
+        "name": "Pi3_Broker_In",
+        "topic": "MA2019/#",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "4b3e807678c7b57a",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "7e5d5cc.02b7ea4",
+                "382b4652.5939ea",
+                "b1b34959.7a57f8",
+                "590d4ebe.26b35",
+                "42f826f1.c9ded8",
+                "7e2ef342.ed605c",
+                "fe68dbdac3355f88",
+                "fd29b6eb6c7167e5",
+                "55c6d94ff4e7ee96",
+                "b9b8376da349cddb",
+                "6dfbe4bee6f639b9",
+                "9bcf2c821f11073d",
+                "4a814d55.6db0b4",
+                "6739a8f1ea708ca0",
+                "301794396f8f56a6"
+            ]
+        ]
+    },
+    {
+        "id": "42f826f1.c9ded8",
+        "type": "file",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "filename": "/home/pi/Documents/MA2019",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "7d530376.8cfc4c"
+            ]
+        ]
+    },
+    {
+        "id": "f1ec23ab.97339",
+        "type": "ui_gauge",
+        "z": "98c342ce.9b9c3",
+        "name": "SHT35_Temp",
+        "group": "83623d6c.f38ad",
+        "order": 9,
+        "width": 7,
+        "height": 6,
+        "gtype": "donut",
+        "title": "Temp(degC)",
+        "label": " DegC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7e5d5cc.02b7ea4",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F1",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[14]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "f1ec23ab.97339",
+                "39361e05.5a6452"
+            ]
+        ]
+    },
+    {
+        "id": "382b4652.5939ea",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F2",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[16]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "250e0436.5c027c",
+                "a0963f54.0cb91"
+            ]
+        ]
+    },
+    {
+        "id": "250e0436.5c027c",
+        "type": "ui_gauge",
+        "z": "98c342ce.9b9c3",
+        "name": "SHT35_RH",
+        "group": "83623d6c.f38ad",
+        "order": 10,
+        "width": 7,
+        "height": 6,
+        "gtype": "wave",
+        "title": "RH(%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 590,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b1b34959.7a57f8",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F4",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[18]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "b601e445.c3c4c8",
+                "5dfaddf06a4ebc65"
+            ]
+        ]
+    },
+    {
+        "id": "b601e445.c3c4c8",
+        "type": "ui_gauge",
+        "z": "98c342ce.9b9c3",
+        "name": "G7_PM2.5",
+        "group": "83623d6c.f38ad",
+        "order": 11,
+        "width": 7,
+        "height": 6,
+        "gtype": "donut",
+        "title": "PM2.5(ug/m^3)",
+        "label": "ug/m^3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 590,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "590d4ebe.26b35",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F3",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[2]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "ab4c2e45fbd6dd0e"
+            ]
+        ]
+    },
+    {
+        "id": "7e2ef342.ed605c",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "timeConvert",
+        "func": "if ( !msg.timestamp ) msg.timestamp = Math.round(+new Date());\n\nvar dt = (msg.timestamp);\n\nreturn [{payload:dt +\"\\n\"}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39361e05.5a6452",
+        "type": "ui_chart",
+        "z": "98c342ce.9b9c3",
+        "name": "Temp_Char",
+        "group": "83623d6c.f38ad",
+        "order": 12,
+        "width": 7,
+        "height": 6,
+        "label": "Temp-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "15",
+        "ymax": "32",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#95df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0963f54.0cb91",
+        "type": "ui_chart",
+        "z": "98c342ce.9b9c3",
+        "name": "RH_Char",
+        "group": "83623d6c.f38ad",
+        "order": 13,
+        "width": 7,
+        "height": 6,
+        "label": "RH-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d530376.8cfc4c",
+        "type": "debug",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fe68dbdac3355f88",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F5",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[4]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 600,
+        "wires": [
+            [
+                "3d989ebcb01e9bcf"
+            ]
+        ]
+    },
+    {
+        "id": "fd29b6eb6c7167e5",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F6",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[6]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "8a8eabc255cd0614"
+            ]
+        ]
+    },
+    {
+        "id": "55c6d94ff4e7ee96",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F7",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[8]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "6bf5b6e6343e4f09"
+            ]
+        ]
+    },
+    {
+        "id": "b9b8376da349cddb",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F8",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[10]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "8e1fed541e443dba"
+            ]
+        ]
+    },
+    {
+        "id": "8e1fed541e443dba",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 5,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Atitude(M)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "6bf5b6e6343e4f09",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 6,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Sat number",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "3d989ebcb01e9bcf",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 7,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Lotitude",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "8a8eabc255cd0614",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 8,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Latitude",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ab4c2e45fbd6dd0e",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 560,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6dfbe4bee6f639b9",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F-1",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[20]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "64cdd19caabe8da7"
+            ]
+        ]
+    },
+    {
+        "id": "9bcf2c821f11073d",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F0",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[22]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "cde82675fe0b5e31"
+            ]
+        ]
+    },
+    {
+        "id": "64cdd19caabe8da7",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Date",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cde82675fe0b5e31",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 3,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Time",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4a814d55.6db0b4",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "GetRealClock",
+        "func": "if ( !msg.timestamp ) msg.timestamp = Math.round(+new Date());\n\nvar payload=msg;\nmsg.payload =\",\"+new Date().toISOString()+\"\\n\";\nreturn msg;\n/*\nvar msg = {\n\t'month':dt.getMonth() + 1,\n\t'day':dt.getDate(),\n\t'year':dt.getFullYear(),\n\t'hours':\tdt.getHours(),\n\t'mins':\t\tdt.getMinutes(),\n\t'msecs':\tdt.getMilliseconds()\n}\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "42f826f1.c9ded8"
+            ]
+        ]
+    },
+    {
+        "id": "6739a8f1ea708ca0",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "F01",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[12]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "f9f51353a8cec9f4"
+            ]
+        ]
+    },
+    {
+        "id": "f9f51353a8cec9f4",
+        "type": "ui_text",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Pressure(hPa)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 600,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5dfaddf06a4ebc65",
+        "type": "ui_chart",
+        "z": "98c342ce.9b9c3",
+        "name": "PM2.5_Char",
+        "group": "83623d6c.f38ad",
+        "order": 14,
+        "width": 7,
+        "height": 6,
+        "label": "PM2.5-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eacaecd6f39f930a",
+        "type": "remote-access",
+        "z": "98c342ce.9b9c3",
+        "confignode": "4a0d285623aaa4b6",
+        "name": "remote red",
+        "verbose": false,
+        "x": 1160,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "efb1f72f.d56a98",
+        "type": "worldmap",
+        "z": "98c342ce.9b9c3",
+        "name": "location",
+        "lat": "25.050838491525237",
+        "lon": "121.12324912333402",
+        "zoom": "14",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showruler": "true",
+        "path": "",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 740,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "208a3922.4fc106",
+        "type": "inject",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"name\":\"Devicel\",\"lat\":25.050838491525237,\"lon\":121.12324912333402,\"radius\":10000}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "59d2062e.e54db8"
+            ]
+        ]
+    },
+    {
+        "id": "59d2062e.e54db8",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "func": "// create random position\nvar lat = 51 + Math.random() * 0.2;\nvar lon = -1.45 + Math.random() * 0.2;\nmsg.payload={lat:lat, lon:lon, name:\"Mike\", icon:\"male\", url:\"<a href=\\\"../ui/#/0\\\">IBM link</a>\"};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "efb1f72f.d56a98"
+            ]
+        ]
+    },
+    {
+        "id": "aa27dc72.3e70a",
+        "type": "ui_template",
+        "z": "98c342ce.9b9c3",
+        "group": "83623d6c.f38ad",
+        "name": "",
+        "order": 16,
+        "width": 7,
+        "height": 7,
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f88c9738.621ee8",
+        "type": "template",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" height=300px ></iframe>",
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "aa27dc72.3e70a"
+            ]
+        ]
+    },
+    {
+        "id": "bdb72125.35aa9",
+        "type": "ui_button",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "group": "83623d6c.f38ad",
+        "order": 15,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Move Mike",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-male",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 140,
+        "y": 920,
+        "wires": [
+            [
+                "59d2062e.e54db8"
+            ]
+        ]
+    },
+    {
+        "id": "b9813d1d.028ac",
+        "type": "comment",
+        "z": "98c342ce.9b9c3",
+        "name": "How to embed Map in Dashboard",
+        "info": "This example shows how to embed the Worldmap \ninto a template node within the `node-red-dashboard`\n\nThe first flow creates a dashboard button that \ngenerates a randon position, with the required \nicon, and passes that to the worldmap. The\nmap is configured to automatically pan to the\nposition of any point that arrives.\n\nThe second flow initialise the dashboard template\nwith the initial map and sets it to a more square shape\nby adjusting the height.",
+        "x": 190,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8ccd6b8f5f38c9a8",
+        "type": "inject",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Devicel\",\"lat\":25.050838491525237,\"lon\":121.12324912333402,\"iconColor\":\"blue\"}",
+        "payloadType": "json",
+        "x": 310,
+        "y": 820,
+        "wires": [
+            [
+                "301794396f8f56a6"
+            ]
+        ]
+    },
+    {
+        "id": "c7fd20dd.46979",
+        "type": "inject",
+        "z": "98c342ce.9b9c3",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "x": 120,
+        "y": 980,
+        "wires": [
+            [
+                "f88c9738.621ee8"
+            ]
+        ]
+    },
+    {
+        "id": "301794396f8f56a6",
+        "type": "function",
+        "z": "98c342ce.9b9c3",
+        "name": "function 1",
+        "func": "\n// create random position\nvar lat = msg.payload.split(\",\");\nreturn [{ payload: lat[6] }];\nvar lon = msg.payload.split(\",\");\nreturn [{ payload: lon[6] }];\nmsg.payload = { lat: lat, lon: lon, name: \"weather\", icon: \"male\", url: \"<a href=\\\"../ui/#/0\\\">IBM link</a>\" };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 800,
+        "wires": [
+            [
+                "efb1f72f.d56a98",
+                "bfbb3dc99912ad4c"
+            ]
+        ]
+    },
+    {
+        "id": "bfbb3dc99912ad4c",
+        "type": "debug",
+        "z": "98c342ce.9b9c3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "21b4ad4.8d1d152",
+        "type": "mqtt in",
+        "z": "e62dc945.c10898",
+        "name": "Pi4_Broker_In",
+        "topic": "AI_BALL/No2",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "67d48833.0ca558",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "2c67a5fe.ca977a",
+                "af5eb4c6.f033a8",
+                "bdbfe8a.dbcb918",
+                "cce63e22.c23b1",
+                "a961ba52.dacbf8",
+                "1ba87f6a.362b11",
+                "d087f9c0.c98598",
+                "ffec7760.3ba948"
+            ]
+        ]
+    },
+    {
+        "id": "d087f9c0.c98598",
+        "type": "file",
+        "z": "e62dc945.c10898",
+        "name": "",
+        "filename": "/home/pi/Documents/Mqtt_In_AiBallNo2",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            [
+                "d2c16081.7dd3"
+            ]
+        ]
+    },
+    {
+        "id": "2c67a5fe.ca977a",
+        "type": "ui_text",
+        "z": "e62dc945.c10898",
+        "group": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Msg_RawData",
+        "label": "RawData",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e076be39.4cc23",
+        "type": "ui_gauge",
+        "z": "e62dc945.c10898",
+        "name": "SHT35_Temp",
+        "group": "",
+        "order": 3,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Temp(degC)",
+        "label": " DegC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "af5eb4c6.f033a8",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "F1",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[0]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "e076be39.4cc23",
+                "3c283b20.d1fa04"
+            ]
+        ]
+    },
+    {
+        "id": "bdbfe8a.dbcb918",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "F2",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[1]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "d67a3ee6.27d39",
+                "10e4127c.6d72fe"
+            ]
+        ]
+    },
+    {
+        "id": "d67a3ee6.27d39",
+        "type": "ui_gauge",
+        "z": "e62dc945.c10898",
+        "name": "SHT35_RH",
+        "group": "",
+        "order": 4,
+        "width": 5,
+        "height": 5,
+        "gtype": "wave",
+        "title": "RH(%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 560,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "cce63e22.c23b1",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "F4",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[3]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "4cc5d2ad.66f84c"
+            ]
+        ]
+    },
+    {
+        "id": "4cc5d2ad.66f84c",
+        "type": "ui_gauge",
+        "z": "e62dc945.c10898",
+        "name": "G7_PM2.5",
+        "group": "",
+        "order": 6,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "PM2.5(ug/m^3)",
+        "label": "ug/m^3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 560,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a961ba52.dacbf8",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "F3",
+        "func": "var output=msg.payload.split(\",\");\nreturn [{payload:output[2]}];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "6bb3e51c.c44a4c",
+                "e5adf300.70edf"
+            ]
+        ]
+    },
+    {
+        "id": "6bb3e51c.c44a4c",
+        "type": "ui_gauge",
+        "z": "e62dc945.c10898",
+        "name": "S8_CO2",
+        "group": "",
+        "order": 5,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "CO2(ppm)",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1ba87f6a.362b11",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "timeConvert",
+        "func": "if ( !msg.timestamp ) msg.timestamp = Math.round(+new Date());\n\nvar dt = (msg.timestamp);\n\nreturn [{payload:dt +\"\\n\"}];\n/*\nvar msg = {\n\t'month':dt.getMonth() + 1,\n\t'day':dt.getDate(),\n\t'year':dt.getFullYear(),\n\t'hours':\tdt.getHours(),\n\t'mins':\t\tdt.getMinutes(),\n\t'msecs':\tdt.getMilliseconds()\n}\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5adf300.70edf",
+        "type": "ui_chart",
+        "z": "e62dc945.c10898",
+        "name": "S8_CO2_Char",
+        "group": "",
+        "order": 9,
+        "width": 10,
+        "height": 6,
+        "label": "CO2-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "400",
+        "ymax": "1400",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffec7760.3ba948",
+        "type": "function",
+        "z": "e62dc945.c10898",
+        "name": "GetRealClock",
+        "func": "if ( !msg.timestamp ) msg.timestamp = Math.round(+new Date());\n\nvar payload=msg;\nmsg.payload =\",\"+new Date().toISOString()+\"\\n\";\nreturn msg;\n/*\nvar msg = {\n\t'month':dt.getMonth() + 1,\n\t'day':dt.getDate(),\n\t'year':dt.getFullYear(),\n\t'hours':\tdt.getHours(),\n\t'mins':\t\tdt.getMinutes(),\n\t'msecs':\tdt.getMilliseconds()\n}\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "d664d2c6.3d002",
+                "d087f9c0.c98598"
+            ]
+        ]
+    },
+    {
+        "id": "d664d2c6.3d002",
+        "type": "ui_text",
+        "z": "e62dc945.c10898",
+        "group": "",
+        "order": 1,
+        "width": 10,
+        "height": 1,
+        "name": "Msg_TimeTag",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 580,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3c283b20.d1fa04",
+        "type": "ui_chart",
+        "z": "e62dc945.c10898",
+        "name": "Temp_Char",
+        "group": "",
+        "order": 7,
+        "width": 10,
+        "height": 6,
+        "label": "Temp-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "27",
+        "ymax": "31",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 780,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10e4127c.6d72fe",
+        "type": "ui_chart",
+        "z": "e62dc945.c10898",
+        "name": "RH_Char",
+        "group": "",
+        "order": 8,
+        "width": 10,
+        "height": 6,
+        "label": "RH-chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "60",
+        "ymax": "80",
+        "removeOlder": "6",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 770,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2c16081.7dd3",
+        "type": "debug",
+        "z": "e62dc945.c10898",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 930,
+        "y": 240,
+        "wires": []
+    }
+]
